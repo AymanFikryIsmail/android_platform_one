@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iti.mad.firstlab">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".DetailsActivity" />
+        <activity android:name=".CunterActivity" />
+        <activity android:name=".fragment_lab.CounterActivity" />
+        <activity android:name=".location.LocationActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".location.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".list_view.ListViewActivity" />
+        <activity android:name=".list_view.FragmentListActivity" />
+        <activity android:name=".thread.HandlerActivity" />
+        <activity android:name=".thread.CountryDetailActivity" />
+        <activity android:name=".thread.CountryListActivity" />
+        <activity android:name=".service.ServiceActivity" />
+
+        <service
+            android:name=".service.MyIntentService"
+            android:exported="false" />
+
+        <activity android:name=".service_cast_demo_one.DownloadActivity" />
+        <activity android:name=".service_cast_demo_one.ResultActivity" />
+
+        <service
+            android:name=".service_cast_demo_one.DownloadService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".service_cast_demo_one.DownloadReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.downloadimage" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".service_demo_two.CaptureActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="image/*" />
+                <!-- <data -->
+                <!-- android:host="www.emollak.net" -->
+                <!-- android:pathPattern="/webapp/home/print" -->
+                <!-- android:scheme="https" /> -->
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.BoundService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".service_demo_two.BatteryLowActivity" />
+
+        <receiver
+            android:name=".service_demo_two.BatteryLowReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".bluetooth.BluetoothActivity" />
+        <activity android:name=".bluetooth.ClientBluetoothActivity"></activity>
+    </application>
+
+</manifest>

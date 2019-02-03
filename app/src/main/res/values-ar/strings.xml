@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">اول لاب</string>
+    <string name="mobile">موبايل  </string>
+
+    <string name="message">الرساله</string>
+    <string name="next">التالي</string>
+    <string name="close">اغلاق</string>
+
+
+
+    <string name="firstRow">اول صف</string>
+    <string name="secondRow">تاني صف</string>
+    <string name="thirdRow">تالت صف</string>
+    <string name="forthRow">رابع صف</string>
+
+    <string name="firstcol">اول عمود</string>
+    <string name="secondcol">تاني عمود</string>
+    <string name="thirdcol">تالت عمود</string>
+    <string name="forthcol">رابع عمود</string>
+
+</resources>
