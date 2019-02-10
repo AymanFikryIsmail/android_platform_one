@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.iti.mad.firstlab">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -11,6 +12,10 @@
     <uses-permission android:name="android.permission.BATTERY_STATS" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -29,6 +34,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <!-- <meta-data -->
+        <!-- android:name="com.facebook.sdk.ApplicationId" -->
+        <!-- android:value="2010438729262025" /> -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -117,7 +131,20 @@
         </receiver>
 
         <activity android:name=".bluetooth.BluetoothActivity" />
-        <activity android:name=".bluetooth.ClientBluetoothActivity"></activity>
+        <activity android:name=".bluetooth.ClientBluetoothActivity" />
+        <activity android:name=".retrofit.RetrofitActivity" />
+        <activity android:name=".firebase.EmailAuthActivity" />
+        <activity android:name=".firebase.GoogleAuthActivity" />
+        <activity android:name=".firebase.FaceBookAuthActivity" />
+        <activity android:name=".realtime_database.RealTimeDBActivity" />
+        <activity android:name=".notification.NotificationActivity"></activity>
+        <!-- [START firebase_service] -->
+        <service android:name=".notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- [END firebase_service] -->
     </application>
 
 </manifest>

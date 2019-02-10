@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">اول لاب</string>
+    <string name="facebook_app_id">2010438729262025</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">Weather</string>
+    <string name="msg_subscribe_failed">Failed to subscribe to weather topic</string>
+    <string name="fcm_message">FCM Message</string>
     <string name="mobile">موبايل  </string>
 
     <string name="message">الرساله</string>

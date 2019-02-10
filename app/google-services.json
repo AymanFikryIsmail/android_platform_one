@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "45171677841",
+    "firebase_url": "https://itiproject-230208.firebaseio.com",
+    "project_id": "itiproject-230208",
+    "storage_bucket": "itiproject-230208.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45171677841:android:4250e0543b2a1ef2",
+        "android_client_info": {
+          "package_name": "com.iti.mad.firstlab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "45171677841-pmc87gsnido3s8t5j9b0a7ceku6nh1up.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iti.mad.firstlab",
+            "certificate_hash": "60fdd1c6392a0f2e29f9e9c135c3e44aa57e46da"
+          }
+        },
+        {
+          "client_id": "45171677841-af9e1kqt8cqmg65pukpjhjtt7vds8bou.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iti.mad.firstlab",
+            "certificate_hash": "b1ce252f4d1bdf41c7d64223b36ee04ad87c2010"
+          }
+        },
+        {
+          "client_id": "45171677841-1hlrm213t2gj08hn5ghocne5aopoa7d3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvtywMzmg0g-KFIGLcLr1K11yyhr-ZHs4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "45171677841-lr8k302ofj5tp7dhhtd2u4rrdn0klrir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

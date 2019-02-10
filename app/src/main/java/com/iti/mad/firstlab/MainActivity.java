@@ -7,10 +7,16 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.iti.mad.firstlab.firebase.EmailAuthActivity;
+import com.iti.mad.firstlab.firebase.FaceBookAuthActivity;
+import com.iti.mad.firstlab.firebase.GoogleAuthActivity;
 import com.iti.mad.firstlab.fragment_lab.CounterActivity;
 import com.iti.mad.firstlab.list_view.FragmentListActivity;
 import com.iti.mad.firstlab.list_view.ListViewActivity;
 import com.iti.mad.firstlab.location.LocationActivity;
+import com.iti.mad.firstlab.notification.NotificationActivity;
+import com.iti.mad.firstlab.realtime_database.RealTimeDBActivity;
+import com.iti.mad.firstlab.retrofit.RetrofitActivity;
 import com.iti.mad.firstlab.service_cast_demo_one.DownloadActivity;
 import com.iti.mad.firstlab.service_demo_two.BatteryLowActivity;
 import com.iti.mad.firstlab.service_demo_two.CaptureActivity;
@@ -27,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent i=new Intent(MainActivity.this, DetailsActivity.class);//BatteryLowActivity
+        Intent i=new Intent(MainActivity.this, NotificationActivity.class);//BatteryLowActivity
         startActivity(i);
         firstCol=findViewById(R.id.firstColId);
         firstCol.setOnClickListener(new View.OnClickListener() {
